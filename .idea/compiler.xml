@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xwx-rpc" />
+        <module name="xwx-rpc-core" />
       </profile>
     </annotationProcessing>
   </component>
