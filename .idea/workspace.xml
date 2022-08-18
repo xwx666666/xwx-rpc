@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="com1">
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" afterDir="false" />
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about all">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-api/src/main/java/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/NettyRpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/NettyRpcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,17 +51,21 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2DW1TTNw1tIWQgrHubRSlEfANGB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xwx-rpc-1" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -78,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660800033713</updated>
-      <workItem from="1660800036290" duration="4796000" />
+      <workItem from="1660800036290" duration="10679000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -94,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660800366251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some updates about dto">
+      <created>1660804990970</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660804990970</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,8 +129,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <MESSAGE value="com1" />
-    <option name="LAST_COMMIT_MESSAGE" value="com1" />
+    <MESSAGE value="some updates about dto" />
+    <MESSAGE value="some updates about all" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about all" />
   </component>
 </project>

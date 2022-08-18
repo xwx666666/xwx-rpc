@@ -5,6 +5,11 @@ import lombok.*;
 
 import java.io.Serializable;
 
+/**
+ * the message which the server send to the client
+ * @auther 薛文轩
+ * @data 2022/8/18
+ */
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

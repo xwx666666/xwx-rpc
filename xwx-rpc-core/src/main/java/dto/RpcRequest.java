@@ -29,8 +29,7 @@ public class RpcRequest implements Serializable {
     private String group;
 
     /**
-     * it is also the data of a service node in zookeeper
-     * @return
+     * @return the data of a service node in zookeeper
      */
     public String getServiceName(){
         return interfaceName+group+version;
