@@ -16,15 +16,9 @@ public interface ServiceProvider {
     Object getService(RpcServiceConfig rpcServiceConfig);
 
     /**
-     * bind the service and the object
-     * @param rpcServiceConfig
-     * @param object
-     */
-    void bindServiceInstance(RpcServiceConfig rpcServiceConfig, Object object);
-
-    /**
      * publish the service to zookeeper
      * @param rpcServiceConfig
      */
     void publishService(RpcServiceConfig rpcServiceConfig);
+
 }

@@ -20,7 +20,7 @@ public class RpcRequest implements Serializable {
     /**
      * facilitate the processing of the server
      */
-    private int requestId;
+    private String requestId;
     private String interfaceName;
     private String methodName;
     private Object[] parameters;

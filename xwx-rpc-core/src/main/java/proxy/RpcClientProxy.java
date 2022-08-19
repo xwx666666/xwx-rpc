@@ -3,13 +3,13 @@ import dto.RpcRequest;
 import dto.RpcResponse;
 import dto.RpcServiceConfig;
 import lombok.extern.slf4j.Slf4j;
-import remoting.transport.netty.NettyRpcClient;
-import remoting.transport.netty.RpcRequestTransport;
+import remoting.transport.RpcRequestTransport;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 
 /**
  *  through the proxy,the user call the remote method as if calling the local method
@@ -42,15 +42,16 @@ public class RpcClientProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         RpcRequest request=RpcRequest.builder()
-                .requestId(UUID.randomUUID().clockSequence())
+                .requestId(UUID.randomUUID().toString())
                 .interfaceName(rpcServiceConfig.getServiceName())
                 .methodName(method.getName())
                 .parameters(args)
                 .paramTypes(method.getParameterTypes())
                 .build();
-        RpcResponse response = (RpcResponse)rpcRequestTransport.sendRpcRequest(request);
-        log.info("receive message from the server : {}",response.getData());
+        CompletableFuture<RpcResponse> completableFuture = (CompletableFuture)rpcRequestTransport.sendRpcRequest(request);
+        RpcResponse rpcResponse = completableFuture.get();
+        log.info("receive message from the server : {}",rpcResponse.getData());
         //TODO Check which type of the response it is
-        return response.getData();
+        return rpcResponse.getData();
     }
 }

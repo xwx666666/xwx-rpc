@@ -4,16 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about all">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/RpcRequestTransport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about all 2">
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/SerializationTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/factory/SingletonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/ServiceDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/ServiceRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/constants/RpcConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/ChannelProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/kyro/KryoSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-api/src/main/java/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-api/src/main/java/api/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/NettyRpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/RpcRequestTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/RpcRequestTransport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,6 +79,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../xwx-rpc-1" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="remoting.transport.netty.client" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="enums" />
+      <recent name="serialize.kyro" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -86,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660800033713</updated>
       <workItem from="1660800036290" duration="11328000" />
-      <workItem from="1660811615732" duration="3753000" />
+      <workItem from="1660811615732" duration="25945000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -123,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660811586390</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some updates about all 2">
+      <created>1660815582027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660815582027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +180,7 @@
     <MESSAGE value="com1" />
     <MESSAGE value="some updates about dto" />
     <MESSAGE value="some updates about all" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about all" />
+    <MESSAGE value="some updates about all 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about all 2" />
   </component>
 </project>

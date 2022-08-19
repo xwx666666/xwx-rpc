@@ -20,7 +20,7 @@ public class RpcResponse implements Serializable {
 
     private static final long serialVersionUID = 222222141950251207L;
 
-    private int requestId;
+    private String requestId;
 
     private Integer code;
 
@@ -29,14 +29,14 @@ public class RpcResponse implements Serializable {
     private Object data;
 
 
-    public static RpcResponse success(Object data,int requestId){
+    public static RpcResponse success(Object data,String requestId){
         return new RpcResponse(requestId,
                 RpcResponseCodeEnum.SUCCESS.getCode(),
                 RpcResponseCodeEnum.SUCCESS.getMessage(),
                 data);
     }
 
-    public static RpcResponse fail(Object data,int requestId){
+    public static RpcResponse fail(Object data,String requestId){
         return new RpcResponse(requestId,
                 RpcResponseCodeEnum.FAIL.getCode(),
                 RpcResponseCodeEnum.FAIL.getMessage(),

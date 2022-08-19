@@ -33,7 +33,7 @@ public class RpcMessage {
     /**
      * mark one request to facilitate the processing of the server
      */
-    private byte requestId;
+    private int requestId;
 
     /**
      * useful data,such the content of one request
