@@ -1,186 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about all 2">
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/SerializationTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/factory/SingletonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/ServiceDiscovery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/ServiceRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/constants/RpcConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/ChannelProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/UnprocessedRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/kyro/KryoSerializer.java" afterDir="false" />
+    <list default="true" id="9a585e9f-f5c7-4940-98fd-8f05cd484b3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/RpcRequestTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/RpcRequestTransport.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
   </component>
-  <component name="ProjectId" id="2DW1TTNw1tIWQgrHubRSlEfANGB" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
+              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xwx-rpc-1" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="remoting.transport.netty.client" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="enums" />
-      <recent name="serialize.kyro" />
-    </key>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="" />
-      <created>1660800033713</created>
+      <changelist id="9a585e9f-f5c7-4940-98fd-8f05cd484b3a" name="Default Changelist" comment="" />
+      <created>1660989769411</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1660800033713</updated>
-      <workItem from="1660800036290" duration="11328000" />
-      <workItem from="1660811615732" duration="25945000" />
+      <updated>1660989769411</updated>
+      <workItem from="1660989770594" duration="873000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1660800220394</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1660800220394</updated>
-    </task>
-    <task id="LOCAL-00002" summary="com1">
-      <created>1660800366251</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1660800366251</updated>
-    </task>
-    <task id="LOCAL-00003" summary="some updates about dto">
-      <created>1660804990970</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1660804990970</updated>
-    </task>
-    <task id="LOCAL-00004" summary="some updates about all">
-      <created>1660810977620</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1660810977620</updated>
-    </task>
-    <task id="LOCAL-00005" summary="some updates about all">
-      <created>1660811586390</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1660811586390</updated>
-    </task>
-    <task id="LOCAL-00006" summary="some updates about all 2">
-      <created>1660815582027</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1660815582027</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="873000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22453083" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test" />
-    <MESSAGE value="com1" />
-    <MESSAGE value="some updates about dto" />
-    <MESSAGE value="some updates about all" />
-    <MESSAGE value="some updates about all 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about all 2" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/SerializationTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xwx-rpc-api/src/main/java/api/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>jdk1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
