@@ -1,5 +1,6 @@
 package remoting.transport.netty.client;
 
+import dto.RpcMessage;
 import dto.RpcResponse;
 import factory.SingletonFactory;
 import io.netty.channel.ChannelHandlerContext;
@@ -23,9 +24,9 @@ public class NettyRpcClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        if(msg instanceof RpcResponse){
-            RpcResponse rpcResponse = (RpcResponse) msg;
-            log.info("receive message from client : [{}]",rpcResponse.getData());
+        if(msg instanceof RpcMessage){
+            RpcResponse rpcResponse = (RpcResponse) ((RpcMessage)msg).getData();
+            log.info("receive message that contains the results of the call from client : [{}]",rpcResponse.getData());
             unprocessedRequests.complete(rpcResponse.getRequestId(),rpcResponse);
         }
         super.channelRead(ctx, msg);

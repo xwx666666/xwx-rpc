@@ -34,11 +34,10 @@ public class ZKServiceProvider implements ServiceProvider {
     }
 
     @Override
-    public Object getService(RpcServiceConfig rpcServiceConfig) {
-        String rpcServiceName = rpcServiceConfig.getRpcServiceName();
+    public Object getService(String rpcServiceName) {
         Object object = serviceMap.get(rpcServiceName);
         if(object==null){
-            throw new RuntimeException("can not find service '"+rpcServiceConfig.getRpcServiceName()+"'");
+            throw new RuntimeException("can not find service '"+rpcServiceName+"'");
         }
         return object;
     }

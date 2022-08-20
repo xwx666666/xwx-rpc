@@ -1,8 +1,11 @@
 package remoting.codec;
 
+import compress.Compress;
+import compress.gzip.GzipCompress;
 import dto.RpcMessage;
 import dto.RpcRequest;
 import dto.RpcResponse;
+import enums.CompressTypeEnum;
 import enums.SerializationTypeEnum;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -24,7 +27,7 @@ public class RpcMessageDecoder extends LengthFieldBasedFrameDecoder {
 
 
     public RpcMessageDecoder(){
-        super(8 * 1024 * 1024,0,4,0,4);
+        super(RpcConstants.MAX_FRAME_LENGTH, 5, 4, -9, 0);
     }
 
     @Override
@@ -46,7 +49,6 @@ public class RpcMessageDecoder extends LengthFieldBasedFrameDecoder {
         }
         return decoded;
     }
-
 
     private Object decodeFrame(ByteBuf in) {
         // note: must read ByteBuf in order
@@ -74,10 +76,10 @@ public class RpcMessageDecoder extends LengthFieldBasedFrameDecoder {
         if (bodyLength > 0) {
             byte[] bs = new byte[bodyLength];
             in.readBytes(bs);
+
             // decompress the bytes
 //            String compressName = CompressTypeEnum.getName(compressType);
-//            Compress compress = ExtensionLoader.getExtensionLoader(Compress.class)
-//                    .getExtension(compressName);
+//            Compress compress = new GzipCompress();
 //            bs = compress.decompress(bs);
 
             // deserialize the object

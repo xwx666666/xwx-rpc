@@ -43,7 +43,7 @@ public class RpcClientProxy implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         RpcRequest request=RpcRequest.builder()
                 .requestId(UUID.randomUUID().toString())
-                .interfaceName(rpcServiceConfig.getServiceName())
+                .interfaceName(method.getDeclaringClass().getName())
                 .methodName(method.getName())
                 .parameters(args)
                 .paramTypes(method.getParameterTypes())

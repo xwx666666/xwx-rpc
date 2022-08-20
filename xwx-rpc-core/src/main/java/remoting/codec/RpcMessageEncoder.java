@@ -62,6 +62,6 @@ public class RpcMessageEncoder extends MessageToByteEncoder<RpcMessage> {
         } catch (Exception e) {
             log.error("Encode request error!", e);
         }
-        log.info("send rpcRequest to Server {}",rpcMessage);
+        log.info("send rpcResponse to client {}",rpcMessage);
     }
 }

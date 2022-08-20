@@ -10,10 +10,10 @@ import dto.RpcServiceConfig;
 public interface ServiceProvider {
 
     /**
-     * @param rpcServiceConfig the target object which call the target method
-     * @return
+     * @param rpcServiceName
+     * @return the target object which call the target method
      */
-    Object getService(RpcServiceConfig rpcServiceConfig);
+    Object getService(String rpcServiceName);
 
     /**
      * publish the service to zookeeper

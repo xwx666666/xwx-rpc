@@ -1,7 +1,9 @@
 package remoting.transport.netty.client;
 
+import dto.RpcMessage;
 import dto.RpcRequest;
 import dto.RpcResponse;
+import enums.SerializationTypeEnum;
 import factory.SingletonFactory;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -10,7 +12,9 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import registry.ServiceDiscovery;
 import registry.zk.ZkServiceDiscoveryImpl;
+import remoting.codec.RpcMessageDecoder;
 import remoting.codec.RpcMessageEncoder;
+import remoting.constants.RpcConstants;
 import remoting.transport.RpcRequestTransport;
 
 import java.net.InetSocketAddress;
@@ -37,6 +41,8 @@ public class NettyRpcClient implements RpcRequestTransport {
                       protected void initChannel(SocketChannel ch) throws Exception {
                           ChannelPipeline pipeline = ch.pipeline();
                           pipeline.addLast(new RpcMessageEncoder());
+                          pipeline.addLast(new RpcMessageDecoder());
+                          pipeline.addLast(new NettyRpcClientHandler());
                       }
                   });
         serviceDiscovery= SingletonFactory.getSingletonInstance(ZkServiceDiscoveryImpl.class);
@@ -44,16 +50,30 @@ public class NettyRpcClient implements RpcRequestTransport {
         unprocessedRequests=SingletonFactory.getSingletonInstance(UnprocessedRequests.class);
     }
 
+    /**
+     * send rpc request to the server
+     * 1.getServiceAddress
+     * 2.build rpcMessage
+     * 3.send rpcMessage(it will be processed by the encoder)
+     * 4.get response from server(the response is obtain through the decoder rpcMessage)
+     * @param rpcRequest
+     * @return
+     */
     @Override
     public Object sendRpcRequest(RpcRequest rpcRequest) {
         //look up the server address
         InetSocketAddress inetSocketAddress = serviceDiscovery.looupService(rpcRequest);
         CompletableFuture<RpcResponse> resultFuture = new CompletableFuture<>();
         unprocessedRequests.add(rpcRequest.getRequestId(),resultFuture);
+        //build a rpcMessage
+        RpcMessage rpcMessage=RpcMessage.builder().messageType(RpcConstants.REQUEST_TYPE)
+                                                  .codec(SerializationTypeEnum.KYRO.getCode())
+                                                  .compress((byte)0)
+                                                  .data(rpcRequest).build();
         try {
             Channel channel = getChannel(inetSocketAddress);
             if(channel.isActive()){
-                channel.writeAndFlush(rpcRequest);
+                channel.writeAndFlush(rpcMessage);
             }else{
                throw new RuntimeException("channel is unActive!");
             }
@@ -83,9 +103,9 @@ public class NettyRpcClient implements RpcRequestTransport {
 
     // it is a synchronous method,i think it may be optimized by thread pool later
     public Channel doConnect(InetSocketAddress inetSocketAddress) throws InterruptedException {
-        //synchronous wait
-        ChannelFuture channelFuture = bootstrap.connect(inetSocketAddress).sync();
-        return channelFuture.channel();
+            //synchronous wait
+            ChannelFuture channelFuture = bootstrap.connect(inetSocketAddress).sync();
+            return channelFuture.channel();
     }
 
 }
