@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/xwx-rpc.iml" filepath="$PROJECT_DIR$/.idea/xwx-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xwx-rpc.iml" filepath="$PROJECT_DIR$/xwx-rpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" filepath="$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" filepath="$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" filepath="$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" />

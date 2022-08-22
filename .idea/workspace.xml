@@ -1,1218 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a585e9f-f5c7-4940-98fd-8f05cd484b3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_caucho_hessian_4_0_65.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_4_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_reflectasm_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_5_4_beta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_runner_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_suite_api_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/xwx-rpc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/CompressTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/compress/Compress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/compress/gzip/GzipCompress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/hessian/HessianSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/xwx-rpc-core.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-server/xwx-rpc-server.iml" afterDir="false" />
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about all 3">
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/NettyRpcClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/xwx-rpc-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/xwx-rpc-server.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/xwx-rpc-api/target/" />
-    <ignored path="$PROJECT_DIR$/xwx-rpc-common/target/" />
-    <ignored path="$PROJECT_DIR$/xwx-rpc-core/target/" />
-    <ignored path="$PROJECT_DIR$/xwx-rpc-client/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/xwx-rpc-server/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="45" column="68" lean-forward="true" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/RpcRequestTransport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="69" column="83" selection-start-line="69" selection-start-column="79" selection-end-line="69" selection-end-column="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="85" column="80" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/ChannelProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcServiceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-client/src/main/java/NettyRpcClient.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClientHandler.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClient.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/hessian/HessianSerializer.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/compress/gzip/GzipCompress.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/compress/Compress.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/CompressTypeEnum.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/ChannelProvider.java" />
-        <option value="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java" />
-      </list>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectId" id="2DW1TTNw1tIWQgrHubRSlEfANGB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="compress" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="compress" type="462c0819:PsiDirectoryNode" />
-              <item name="gzip" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="remoting" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-              <item name="hessian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xwx-rpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xwx-rpc" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx-rpc-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xwx" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xwx-rpc-core/src/main/java" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xwx-rpc-1" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="remoting.transport.netty.client" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="enums" />
-      <recent name="serialize.hessian" />
-      <recent name="xwx" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\JavaText_study\xwx-rpc\xwx-rpc-core\src\main\java" />
+      <recent name="serialize.kyro" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.NettyRpcClientMain">
-    <configuration name="NettyRpcClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xwx.NettyRpcClient" />
-      <module name="xwx-rpc-client" />
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettyRpcClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xwx.NettyRpcClientMain" />
-      <module name="xwx-rpc-client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xwx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NettyRpcServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xwx.NettyRpcServerMain" />
-      <module name="xwx-rpc-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="xwx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.NettyRpcClientMain" />
-        <item itemvalue="Application.NettyRpcServerMain" />
-        <item itemvalue="Application.NettyRpcClient" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9a585e9f-f5c7-4940-98fd-8f05cd484b3a" name="Default Changelist" comment="" />
-      <created>1660989769411</created>
+      <changelist id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="" />
+      <created>1660800033713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1660989769411</updated>
-      <workItem from="1660989770594" duration="10128000" />
+      <updated>1660800033713</updated>
+      <workItem from="1660800036290" duration="11328000" />
+      <workItem from="1660811615732" duration="25945000" />
     </task>
-    <task id="LOCAL-00001" summary="some updates">
-      <created>1660990864495</created>
+    <task id="LOCAL-00001" summary="test">
+      <created>1660800220394</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1660990864495</updated>
+      <updated>1660800220394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="com1">
+      <created>1660800366251</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660800366251</updated>
+    </task>
+    <task id="LOCAL-00003" summary="some updates about dto">
+      <created>1660804990970</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660804990970</updated>
+    </task>
+    <task id="LOCAL-00004" summary="some updates about all">
+      <created>1660810977620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660810977620</updated>
+    </task>
+    <task id="LOCAL-00005" summary="some updates about all">
+      <created>1660811586390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660811586390</updated>
+    </task>
+    <task id="LOCAL-00006" summary="some updates about all 2">
+      <created>1660815582027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660815582027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10128000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24530831" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" weight="0.47025496" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5835694" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" weight="0.3297587" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" weight="0.3297587" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23324397" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.04249292" />
-      <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.04249292" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="Maven" order="0" weight="0.3297587" />
-      <window_info anchor="right" id="Palette" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/SerializationTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8.0_221/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="146" column="27" lean-forward="true" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/constants/RpcConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/ServiceDiscovery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8.0_221/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="1780" column="67" selection-start-line="1780" selection-start-column="53" selection-end-line="1780" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Java/jdk1.8.0_221/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="483" column="52" selection-start-line="483" selection-start-column="52" selection-end-line="483" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/UnprocessedRequests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-api/src/main/java/api/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/factory/SingletonFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="e#998#1496#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/hessian/HessianSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="40" column="65" lean-forward="true" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/serialize/kyro/KryoSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/compress/gzip/GzipCompress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/compress/Compress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/CompressTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="45" column="68" lean-forward="true" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/RpcRequestTransport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcServiceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/ServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/provider/impl/ZKServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/dto/RpcRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/NettyRpcClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="69" column="83" selection-start-line="69" selection-start-column="79" selection-end-line="69" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/client/ChannelProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="85" column="80" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/codec/RpcMessageEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>jdk1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="test" />
+    <MESSAGE value="com1" />
+    <MESSAGE value="some updates about dto" />
+    <MESSAGE value="some updates about all" />
+    <MESSAGE value="some updates about all 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about all 2" />
   </component>
 </project>

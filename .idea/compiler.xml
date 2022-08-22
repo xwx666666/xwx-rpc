@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xwx-rpc-api" />
-        <module name="xwx-rpc-server" />
-        <module name="xwx-rpc-client" />
         <module name="xwx-rpc-core" />
+        <module name="xwx-rpc-client" />
+        <module name="xwx-rpc-server" />
         <module name="xwx-rpc-common" />
       </profile>
     </annotationProcessing>
