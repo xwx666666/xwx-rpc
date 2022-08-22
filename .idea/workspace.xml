@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about all 3">
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-api/xwx-rpc-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/xwx-rpc-client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-common/xwx-rpc-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/xwx-rpc-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/xwx-rpc-server.iml" afterDir="false" />
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about CuratorUtils">
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660815582027</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="some updates about CuratorUtls">
+      <created>1661160702697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661160702697</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +163,7 @@
     <MESSAGE value="some updates about dto" />
     <MESSAGE value="some updates about all" />
     <MESSAGE value="some updates about all 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about all 2" />
+    <MESSAGE value="some updates about CuratorUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about CuratorUtils" />
   </component>
 </project>
