@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about CuratorUtils">
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/TestCuratorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/annotation/xRpcReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/annotation/xRpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/springIOC/MyBeanAfterProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/proxy/RpcClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageEncoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -74,7 +78,7 @@
       <recent name="serialize.kyro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NettyRpcServerMain">
+  <component name="RunManager" selected="Application.TestCuratorUtils (1)">
     <configuration name="NettyRpcClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xwx.NettyRpcClientMain" />
       <module name="xwx-rpc-client" />
@@ -94,6 +98,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="xwx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCuratorUtils (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xwx.registry.zk.util.TestCuratorUtils" />
+      <module name="xwx-rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xwx.registry.zk.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,6 +146,7 @@
       <list>
         <item itemvalue="Application.NettyRpcClientMain" />
         <item itemvalue="Application.NettyRpcServerMain" />
+        <item itemvalue="Application.TestCuratorUtils (1)" />
         <item itemvalue="Application.TestCuratorUtils" />
       </list>
     </recent_temporary>
@@ -143,7 +161,7 @@
       <updated>1660800033713</updated>
       <workItem from="1660800036290" duration="11328000" />
       <workItem from="1660811615732" duration="25945000" />
-      <workItem from="1661223272299" duration="6932000" />
+      <workItem from="1661223272299" duration="18208000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -201,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661161393987</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="some updates about CuratorUtils">
+      <created>1661235501918</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661235501918</updated>
+    </task>
+    <task id="LOCAL-00010" summary="some updates about CuratorUtils">
+      <created>1661235643268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661235643268</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,5 +260,19 @@
     <MESSAGE value="some updates about all 2" />
     <MESSAGE value="some updates about CuratorUtils" />
     <option name="LAST_COMMIT_MESSAGE" value="some updates about CuratorUtils" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/ServiceDiscovery.java</url>
+          <line>12</line>
+          <properties class="xwx.registry.ServiceDiscovery" method="looupService">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

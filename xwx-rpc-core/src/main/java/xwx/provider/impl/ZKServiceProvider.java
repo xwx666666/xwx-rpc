@@ -55,6 +55,7 @@ public class ZKServiceProvider implements ServiceProvider {
     public void publishService(RpcServiceConfig rpcServiceConfig) {
         try {
             String host = InetAddress.getLocalHost().getHostAddress();
+            //put the address of current machine under the node of a specific service
             serviceRegistry.registerService(rpcServiceConfig.getRpcServiceName(),new InetSocketAddress(host, NettyRpcServer.PORT));
             saveServiceInLocal(rpcServiceConfig);
         } catch (UnknownHostException e) {
