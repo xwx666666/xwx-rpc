@@ -1,13 +1,11 @@
 package xwx;
 
-import api.HelloService;
-import dto.RpcServiceConfig;
+import xwx.api.HelloService;
+import xwx.dto.RpcServiceConfig;
 import lombok.extern.slf4j.Slf4j;
-import proxy.RpcClientProxy;
-import remoting.transport.RpcRequestTransport;
-import remoting.transport.netty.client.NettyRpcClient;
-
-import java.util.UUID;
+import xwx.proxy.RpcClientProxy;
+import xwx.remoting.transport.RpcRequestTransport;
+import xwx.remoting.transport.netty.client.NettyRpcClient;
 
 /**
  * @author : xwx

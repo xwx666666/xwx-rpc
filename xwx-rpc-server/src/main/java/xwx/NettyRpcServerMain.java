@@ -1,10 +1,10 @@
 package xwx;
 
-import dto.RpcServiceConfig;
+import xwx.dto.RpcServiceConfig;
 import factory.SingletonFactory;
-import provider.impl.ZKServiceProvider;
-import remoting.transport.netty.server.NettyRpcServer;
-import serviceImpl.HelloServiceImpl;
+import xwx.provider.impl.ZKServiceProvider;
+import xwx.remoting.transport.netty.server.NettyRpcServer;
+import xwx.serviceImpl.HelloServiceImpl;
 
 /**
  * @auther 薛文轩
@@ -13,7 +13,7 @@ import serviceImpl.HelloServiceImpl;
 public class NettyRpcServerMain {
     public static void main(String[] args) {
         HelloServiceImpl helloService = SingletonFactory.getSingletonInstance(HelloServiceImpl.class);
-        ZKServiceProvider ZKServiceProvider = SingletonFactory.getSingletonInstance(provider.impl.ZKServiceProvider.class);
+        ZKServiceProvider ZKServiceProvider = SingletonFactory.getSingletonInstance(xwx.provider.impl.ZKServiceProvider.class);
         RpcServiceConfig rpcServiceConfig=RpcServiceConfig.builder().service(helloService).group("").version("").build();
         ZKServiceProvider.publishService(rpcServiceConfig);
         new NettyRpcServer().start();
