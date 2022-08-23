@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about CuratorUtils">
+      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/TestCuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/proxy/RpcClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceDiscoveryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/ZkServiceRegistryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/registry/zk/util/CuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/serviceImpl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,20 +74,64 @@
       <recent name="serialize.kyro" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.NettyRpcServerMain">
+    <configuration name="NettyRpcClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xwx.NettyRpcClientMain" />
+      <module name="xwx-rpc-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xwx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyRpcServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xwx.NettyRpcServerMain" />
+      <module name="xwx-rpc-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xwx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCuratorUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="registry.zk.util.TestCuratorUtils" />
+      <module name="xwx-rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="registry.zk.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NettyRpcClientMain" />
+        <item itemvalue="Application.NettyRpcServerMain" />
+        <item itemvalue="Application.TestCuratorUtils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +143,7 @@
       <updated>1660800033713</updated>
       <workItem from="1660800036290" duration="11328000" />
       <workItem from="1660811615732" duration="25945000" />
+      <workItem from="1661223272299" duration="6932000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -138,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661160702697</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some updates about CuratorUtils">
+      <created>1661161393987</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661161393987</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

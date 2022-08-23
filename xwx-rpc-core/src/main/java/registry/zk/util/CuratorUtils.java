@@ -11,6 +11,7 @@ import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 
+import java.net.InetSocketAddress;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -24,16 +25,16 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class CuratorUtils {
 
-    private static String ZK_ROOT="/xwx-rpc";
+    public static String ZK_ROOT="/xwx-rpc";
     private static CuratorFramework zkClient;
     private static Set<String> REGISTERED_PATH_SET= ConcurrentHashMap.newKeySet();
-    //key: serviceName  value: address
+    //cache address data, key: serviceName  value: address
     private static Map<String,List<String>> SERVICE_ADDRESS_MAP=new ConcurrentHashMap<>();
     /**
      * get connection to zookeeper
      * @return
      */
-     static CuratorFramework getZkClient(){
+     public static CuratorFramework getZkClient(){
          if(zkClient!=null && zkClient.getState()== CuratorFrameworkState.STARTED){
              return zkClient;
          }
@@ -50,6 +51,7 @@ public class CuratorUtils {
          } catch (InterruptedException e) {
              e.printStackTrace();
          }
+         CuratorUtils.zkClient=zkClient;
          return zkClient;
      }
 
@@ -77,19 +79,20 @@ public class CuratorUtils {
      * @return
      */
      public static List<String> getChildNodes(CuratorFramework zkClient,String serviceName){
-
             if(SERVICE_ADDRESS_MAP.containsKey(serviceName)){
-                  return SERVICE_ADDRESS_MAP.get(serviceName)
+                  return SERVICE_ADDRESS_MAP.get(serviceName);
             }
+            //the first time to get children nodes of a service
             String path=ZK_ROOT+"/"+serviceName;
-         List<String> list=null;
-         try {
-             list= zkClient.getChildren().forPath(path);
-             SERVICE_ADDRESS_MAP.put(serviceName,list);
-         } catch (Exception e) {
-             e.printStackTrace();
-         }
-         return list;
+             List<String> list=null;
+             try {
+                 list= zkClient.getChildren().forPath(path);
+                 SERVICE_ADDRESS_MAP.put(serviceName,list);
+                 registerWatcher(serviceName,zkClient);
+             } catch (Exception e) {
+                 e.printStackTrace();
+             }
+             return list;
      }
 
     /**
@@ -109,7 +112,24 @@ public class CuratorUtils {
         pathChildrenCache.start();
     }
 
-
+    /**
+     * before the program ends , do something to clean up the data in zookeeper
+     */
+    public static void registerShutdownHook(CuratorFramework zkClient, InetSocketAddress inetSocketAddress) {
+        log.info("addShutdownHook for clear the data in zookeeper");
+        Runtime.getRuntime().addShutdownHook(new Thread(()->{
+            REGISTERED_PATH_SET.stream().parallel().forEach(p -> {
+                try {
+                    if (p.endsWith(inetSocketAddress.toString())) {
+                        zkClient.delete().forPath(p);
+                    }
+                } catch (Exception e) {
+                    log.error("clear registry for path [{}] fail", p);
+                }
+            });
+            log.info("All registered services on the server are cleared:[{}]", REGISTERED_PATH_SET.toString());
+        }));
+    }
 
 
 }

@@ -7,7 +7,6 @@ import api.HelloService;
  * @date : 2022/8/18 下午4:30
  */
 public class HelloServiceImpl implements HelloService {
-
     @Override
     public String hello(String option) {
         if("1".equals(option)){

@@ -47,6 +47,8 @@ public class RpcClientProxy implements InvocationHandler {
                 .methodName(method.getName())
                 .parameters(args)
                 .paramTypes(method.getParameterTypes())
+                .group("")
+                .version("")
                 .build();
         CompletableFuture<RpcResponse> completableFuture = (CompletableFuture)rpcRequestTransport.sendRpcRequest(request);
         RpcResponse rpcResponse = completableFuture.get();

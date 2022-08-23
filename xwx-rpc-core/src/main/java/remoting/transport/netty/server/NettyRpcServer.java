@@ -8,8 +8,11 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.extern.slf4j.Slf4j;
+import registry.zk.util.CuratorUtils;
 import remoting.codec.RpcMessageDecoder;
 import remoting.codec.RpcMessageEncoder;
+
+import java.net.InetSocketAddress;
 
 /**
  * @author : xwx
@@ -20,6 +23,7 @@ public class NettyRpcServer {
     public static final int PORT = 9998;
 
     public void start(){
+        CuratorUtils.registerShutdownHook(CuratorUtils.getZkClient(),new InetSocketAddress("127.0.0.1",PORT));
         new NioEventLoopGroup();
         NioEventLoopGroup boss = new NioEventLoopGroup();
         NioEventLoopGroup worker = new NioEventLoopGroup();
