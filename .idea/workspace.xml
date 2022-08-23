@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about CuratorUtils">
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/annotation/xRpcReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/annotation/xRpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/springIOC/MyBeanAfterProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/proxy/RpcClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/proxy/RpcClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/NettyRpcServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about annotation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +148,7 @@
       <updated>1660800033713</updated>
       <workItem from="1660800036290" duration="11328000" />
       <workItem from="1660811615732" duration="25945000" />
-      <workItem from="1661223272299" duration="18208000" />
+      <workItem from="1661223272299" duration="18623000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -233,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661235643268</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="some updates about annotation">
+      <created>1661246979034</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661246979034</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +253,8 @@
     <MESSAGE value="some updates about all" />
     <MESSAGE value="some updates about all 2" />
     <MESSAGE value="some updates about CuratorUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about CuratorUtils" />
+    <MESSAGE value="some updates about annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about annotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

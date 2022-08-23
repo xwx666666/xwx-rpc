@@ -25,9 +25,10 @@ public class ZkServiceDiscoveryImpl implements ServiceDiscovery {
     @Override
     public InetSocketAddress looupService(RpcRequest rpcRequest) {
         String serviceName=rpcRequest.getServiceName();
-        log.info("look up serviceName :{}",serviceName);
+
         CuratorFramework zkClient = CuratorUtils.getZkClient();
         List<String> childNodes = CuratorUtils.getChildNodes(zkClient, serviceName);
+        log.info("look up serviceName :{},childrenList is : {}",serviceName,childNodes);
         if(childNodes==null || childNodes.size()==0){
             throw new RuntimeException("no such service");
         }
