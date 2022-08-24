@@ -41,7 +41,7 @@ public class RpcMessageEncoder extends MessageToByteEncoder<RpcMessage> {
                     && messageType != RpcConstants.HEARTBEAT_RESPONSE_TYPE) {
                 // serialize the object
                 String codecName = SerializationTypeEnum.getName(rpcMessage.getCodec());
-                log.info("codec name: [{}] ", codecName);
+//                log.info("codec name: [{}] ", codecName);
                 Serializer serializer = new KryoSerializer();
                 bodyBytes = serializer.serialize(rpcMessage.getData());
 //                // compress the bytes

@@ -13,4 +13,9 @@ public class TestController {
 
     @xRpcReference
     HelloService helloService;
+
+    public void useHello(){
+        String hello = helloService.hello("156");
+        System.out.println(hello);
+    }
 }

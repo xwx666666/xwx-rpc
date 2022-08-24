@@ -80,7 +80,7 @@ public class RpcMessageDecoder extends LengthFieldBasedFrameDecoder {
 
             // deserialize the object
             String codecName = SerializationTypeEnum.getName(rpcMessage.getCodec());
-            log.info("codec name: [{}] ", codecName);
+//            log.info("codec name: [{}] ", codecName);
             Serializer serializer = new KryoSerializer();
             if (messageType == RpcConstants.REQUEST_TYPE) {
                 RpcRequest tmpValue = serializer.deserialize(bs, RpcRequest.class);
