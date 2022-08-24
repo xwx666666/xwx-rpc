@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about annotation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/codec/RpcMessageEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +32,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -147,7 +144,7 @@
       <workItem from="1660800036290" duration="11328000" />
       <workItem from="1660811615732" duration="25945000" />
       <workItem from="1661223272299" duration="19775000" />
-      <workItem from="1661311081947" duration="656000" />
+      <workItem from="1661311081947" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -233,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661247389672</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="some updates about annotation">
+      <created>1661311784607</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661311784607</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

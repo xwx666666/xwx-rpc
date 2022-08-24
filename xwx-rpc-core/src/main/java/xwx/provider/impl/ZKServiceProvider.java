@@ -1,7 +1,7 @@
 package xwx.provider.impl;
 
-import xwx.dto.RpcServiceConfig;
 import factory.SingletonFactory;
+import xwx.dto.RpcServiceConfig;
 import xwx.provider.ServiceProvider;
 import xwx.registry.ServiceRegistry;
 import xwx.registry.zk.ZkServiceRegistryImpl;
@@ -11,7 +11,6 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -24,12 +23,10 @@ public class ZKServiceProvider implements ServiceProvider {
      * value - target object who will call the target method
      */
     private Map<String,Object> serviceMap;
-    private Set<String> serviceNameSet;
     private ServiceRegistry serviceRegistry;
 
     public ZKServiceProvider(){
         serviceMap=new ConcurrentHashMap<>();
-        serviceNameSet=ConcurrentHashMap.newKeySet();
         serviceRegistry= SingletonFactory.getSingletonInstance(ZkServiceRegistryImpl.class);
     }
 
@@ -42,13 +39,15 @@ public class ZKServiceProvider implements ServiceProvider {
         return object;
     }
 
-
     private void saveServiceInLocal(RpcServiceConfig rpcServiceConfig) {
         if(rpcServiceConfig==null){
             throw new RuntimeException("rpcServiceConfig is null");
         }
-        serviceMap.put(rpcServiceConfig.getRpcServiceName(),rpcServiceConfig.getService());
-        serviceNameSet.add(rpcServiceConfig.getRpcServiceName());
+        String rpcServiceName = rpcServiceConfig.getRpcServiceName();
+        if(serviceMap.containsKey(rpcServiceName)){
+              return;
+        }
+        serviceMap.put(rpcServiceName,rpcServiceConfig.getService());
     }
 
     @Override
