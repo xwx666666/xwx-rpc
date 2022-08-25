@@ -2,7 +2,6 @@ package xwx.remoting.transport.netty.client;
 
 import enums.SerializationTypeEnum;
 import factory.SingletonFactory;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -12,8 +11,6 @@ import lombok.extern.slf4j.Slf4j;
 import xwx.dto.RpcMessage;
 import xwx.dto.RpcResponse;
 import xwx.remoting.constants.RpcConstants;
-
-import java.net.InetSocketAddress;
 
 /**
  * @author : xwx
@@ -57,12 +54,12 @@ public class NettyRpcClientHandler extends ChannelInboundHandlerAdapter {
         if(evt instanceof IdleStateEvent){
             IdleStateEvent idleStateEvent = (IdleStateEvent) evt;
             if(idleStateEvent.state()== IdleState.WRITER_IDLE){
-                Channel channel =  nettyRpcClient.getChannel((InetSocketAddress) ctx.channel().remoteAddress());
+//                Channel channel =  nettyRpcClient.getChannel((InetSocketAddress) ctx.channel().remoteAddress());
                 log.info("send a WRITER_IDLE to the server: [{}] to keep the channel alive",ctx.channel().remoteAddress());
                 RpcMessage rpcMessage = RpcMessage.builder().codec(SerializationTypeEnum.KYRO.getCode())
                         .messageType(RpcConstants.HEARTBEAT_REQUEST_TYPE)
                         .data(RpcConstants.PING).build();
-                channel.writeAndFlush(rpcMessage).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
+                ctx.writeAndFlush(rpcMessage).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
             }
         }else{
             super.userEventTriggered(ctx, evt);

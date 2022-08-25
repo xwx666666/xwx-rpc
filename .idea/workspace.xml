@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about serviceProvider">
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about ServiceDiscovery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/ZkServiceDiscoveryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/ZkServiceDiscoveryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/CuratorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +159,7 @@
       <workItem from="1660811615732" duration="25945000" />
       <workItem from="1661223272299" duration="19775000" />
       <workItem from="1661311081947" duration="16380000" />
-      <workItem from="1661407182936" duration="4323000" />
+      <workItem from="1661407182936" duration="5599000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -266,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661314228070</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="some updates about ServiceDiscovery">
+      <created>1661411525334</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661411525334</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +294,7 @@
     <MESSAGE value="some updates about CuratorUtils" />
     <MESSAGE value="some updates about annotation" />
     <MESSAGE value="some updates about serviceProvider" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about serviceProvider" />
+    <MESSAGE value="some updates about ServiceDiscovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about ServiceDiscovery" />
   </component>
 </project>

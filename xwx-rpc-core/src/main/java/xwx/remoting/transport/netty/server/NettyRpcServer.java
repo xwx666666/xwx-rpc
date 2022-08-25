@@ -44,7 +44,7 @@ public class NettyRpcServer {
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipeline = ch.pipeline();
                             //if no read event within 30 seconds,the channel will be closed
-                            pipeline.addLast(new IdleStateHandler(30,5,0, TimeUnit.SECONDS));
+                            pipeline.addLast(new IdleStateHandler(10,0,0, TimeUnit.SECONDS));
                             pipeline.addLast(new RpcMessageEncoder());
                             pipeline.addLast(new RpcMessageDecoder());
                             pipeline.addLast(new NettyRpcServerHandler());

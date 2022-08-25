@@ -1,9 +1,5 @@
 package xwx.remoting.transport.netty.client;
 
-import io.netty.handler.timeout.IdleStateHandler;
-import xwx.dto.RpcMessage;
-import xwx.dto.RpcRequest;
-import xwx.dto.RpcResponse;
 import enums.SerializationTypeEnum;
 import factory.SingletonFactory;
 import io.netty.bootstrap.Bootstrap;
@@ -11,6 +7,10 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.timeout.IdleStateHandler;
+import xwx.dto.RpcMessage;
+import xwx.dto.RpcRequest;
+import xwx.dto.RpcResponse;
 import xwx.registry.ServiceDiscovery;
 import xwx.registry.zk.ZkServiceDiscoveryImpl;
 import xwx.remoting.codec.RpcMessageDecoder;
