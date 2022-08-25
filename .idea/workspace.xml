@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about ServiceDiscovery">
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about Client and Server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +156,7 @@
       <workItem from="1660811615732" duration="25945000" />
       <workItem from="1661223272299" duration="19775000" />
       <workItem from="1661311081947" duration="16380000" />
-      <workItem from="1661407182936" duration="5599000" />
+      <workItem from="1661407182936" duration="6463000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -266,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661411525334</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="some updates about Client and Server">
+      <created>1661414679569</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661414679569</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +299,7 @@
     <MESSAGE value="some updates about annotation" />
     <MESSAGE value="some updates about serviceProvider" />
     <MESSAGE value="some updates about ServiceDiscovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about ServiceDiscovery" />
+    <MESSAGE value="some updates about Client and Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about Client and Server" />
   </component>
 </project>
