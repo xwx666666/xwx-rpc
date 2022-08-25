@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about annotation">
-      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/provider/impl/ZKServiceProvider.java" afterDir="false" />
+    <list default="true" id="c9032555-3383-4c75-ad40-db671171bc11" name="Default Changelist" comment="some updates about serviceProvider">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-client/src/main/java/xwx/NettyRpcClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-common/src/main/java/enums/RpcResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/ZkServiceDiscoveryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/ZkServiceDiscoveryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/CuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/CuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/registry/zk/util/TestCuratorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/client/NettyRpcClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-core/src/main/java/xwx/remoting/transport/netty/server/NettyRpcServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xwx-rpc-server/src/main/java/xwx/serviceImpl/HelloServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +134,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.NettyRpcClientMain" />
@@ -144,7 +165,8 @@
       <workItem from="1660800036290" duration="11328000" />
       <workItem from="1660811615732" duration="25945000" />
       <workItem from="1661223272299" duration="19775000" />
-      <workItem from="1661311081947" duration="1442000" />
+      <workItem from="1661311081947" duration="16380000" />
+      <workItem from="1661407182936" duration="4323000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1660800220394</created>
@@ -237,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661311784607</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="some updates about serviceProvider">
+      <created>1661314228070</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661314228070</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +293,7 @@
     <MESSAGE value="some updates about all 2" />
     <MESSAGE value="some updates about CuratorUtils" />
     <MESSAGE value="some updates about annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates about annotation" />
+    <MESSAGE value="some updates about serviceProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value="some updates about serviceProvider" />
   </component>
 </project>

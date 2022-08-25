@@ -1,5 +1,8 @@
 package xwx.remoting.transport.netty.server;
 
+import io.netty.handler.timeout.IdleState;
+import io.netty.handler.timeout.IdleStateEvent;
+import lombok.extern.slf4j.Slf4j;
 import xwx.dto.RpcMessage;
 import xwx.dto.RpcRequest;
 import xwx.dto.RpcResponse;
@@ -19,6 +22,7 @@ import java.lang.reflect.Method;
  * @author : xwx
  * @date : 2022/8/19 下午5:21
  */
+@Slf4j
 public class NettyRpcServerHandler extends ChannelInboundHandlerAdapter {
 
     private ServiceProvider serviceProvider;
@@ -30,19 +34,39 @@ public class NettyRpcServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         RpcMessage rpcMessage = (RpcMessage) msg;
-        if(rpcMessage.getMessageType()== RpcConstants.REQUEST_TYPE){
+        byte messageType = rpcMessage.getMessageType();
+        RpcMessage reRpcMessage=null;
+        if(messageType == RpcConstants.REQUEST_TYPE){
             RpcRequest rpcRequest = (RpcRequest) (((RpcMessage) msg).getData());
             Object service = serviceProvider.getService(rpcRequest.getServiceName());
             Method method = service.getClass().getMethod(rpcRequest.getMethodName(), rpcRequest.getParamTypes());
             Object result = method.invoke(service, rpcRequest.getParameters());
             //build response
             RpcResponse rpcResponse=RpcResponse.success(result,rpcRequest.getRequestId());
-            RpcMessage reRpcMessage=RpcMessage.builder().messageType(RpcConstants.RESPONSE_TYPE)
+             reRpcMessage=RpcMessage.builder().messageType(RpcConstants.RESPONSE_TYPE)
                     .codec(SerializationTypeEnum.KYRO.getCode())
                     .compress((byte)0)
                     .data(rpcResponse).build();
-            ctx.writeAndFlush(reRpcMessage).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
+        }else if(messageType == RpcConstants.HEARTBEAT_REQUEST_TYPE){
+            log.info("get a heartbeat from client: [{}]",rpcMessage);
+             reRpcMessage=RpcMessage.builder().messageType(RpcConstants.HEARTBEAT_RESPONSE_TYPE)
+                    .codec(SerializationTypeEnum.KYRO.getCode())
+                    .compress((byte)0)
+                    .data(RpcConstants.PONG).build();
         }
-        super.channelRead(ctx, msg);
+        ctx.writeAndFlush(reRpcMessage).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
+    }
+
+    @Override
+    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        if(evt instanceof IdleStateEvent){
+            IdleStateEvent idleStateEvent = (IdleStateEvent) evt;
+            if(idleStateEvent.state()== IdleState.READER_IDLE){
+                log.info("there is a read idle event,the channel will be closed");
+                ctx.close();
+            }
+        }else{
+            super.userEventTriggered(ctx, evt);
+        }
     }
 }

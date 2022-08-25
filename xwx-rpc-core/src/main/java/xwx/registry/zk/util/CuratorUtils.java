@@ -27,9 +27,11 @@ public class CuratorUtils {
 
     public static String ZK_ROOT="/xwx-rpc";
     private static CuratorFramework zkClient;
-    private static Set<String> REGISTERED_PATH_SET= ConcurrentHashMap.newKeySet();
+    //to use it to delete the services in zookeeper which are provided by a specific machine
+    private final static Set<String> REGISTERED_PATH_SET= ConcurrentHashMap.newKeySet();
     //cache address data, key: serviceName  value: address
     private static Map<String,List<String>> SERVICE_ADDRESS_MAP=new ConcurrentHashMap<>();
+
     /**
      * get connection to zookeeper
      * @return
@@ -39,7 +41,7 @@ public class CuratorUtils {
              return zkClient;
          }
          RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 5);
-         CuratorFramework zkClient = CuratorFrameworkFactory.builder().connectString("127.0.0.1:2181")
+          zkClient = CuratorFrameworkFactory.builder().connectString("127.0.0.1:2181")
                  .retryPolicy(retryPolicy)
                  .build();
          //start to connect
@@ -51,7 +53,6 @@ public class CuratorUtils {
          } catch (InterruptedException e) {
              e.printStackTrace();
          }
-         CuratorUtils.zkClient=zkClient;
          return zkClient;
      }
 
@@ -67,6 +68,8 @@ public class CuratorUtils {
              }else{
                  zkClient.create().creatingParentsIfNeeded().withMode(CreateMode.PERSISTENT).forPath(path);
              }
+             //add the path to REGISTERED_PATH_SET locally
+             REGISTERED_PATH_SET.add(path);
          } catch (Exception e) {
              e.printStackTrace();
          }
@@ -127,7 +130,7 @@ public class CuratorUtils {
                     log.error("clear registry for path [{}] fail", p);
                 }
             });
-            log.info("All registered services on the server are cleared:[{}]", REGISTERED_PATH_SET.toString());
+            log.info("All registered services on the server are cleared:[{}]", REGISTERED_PATH_SET);
         }));
     }
 

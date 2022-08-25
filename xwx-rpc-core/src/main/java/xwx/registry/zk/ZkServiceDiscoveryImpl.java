@@ -28,10 +28,10 @@ public class ZkServiceDiscoveryImpl implements ServiceDiscovery {
 
         CuratorFramework zkClient = CuratorUtils.getZkClient();
         List<String> childNodes = CuratorUtils.getChildNodes(zkClient, serviceName);
-        log.info("look up serviceName :{},childrenList is : {}",serviceName,childNodes);
         if(childNodes==null || childNodes.size()==0){
-            throw new RuntimeException("no such service");
+            throw new RuntimeException("no machine provide the service");
         }
+        log.info("look up serviceName :{},childrenList is : {}",serviceName,childNodes);
         //need a loadBalance
         String[] inetStr=childNodes.get(0).split(":");
         String ip=inetStr[0];

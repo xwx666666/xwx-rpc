@@ -7,12 +7,16 @@ import io.netty.channel.ChannelPipeline;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.timeout.IdleStateHandler;
 import lombok.extern.slf4j.Slf4j;
 import xwx.registry.zk.util.CuratorUtils;
 import xwx.remoting.codec.RpcMessageDecoder;
 import xwx.remoting.codec.RpcMessageEncoder;
 
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
+import java.net.UnknownHostException;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author : xwx
@@ -20,11 +24,15 @@ import java.net.InetSocketAddress;
  */
 @Slf4j
 public class NettyRpcServer {
-    public static final int PORT = 9998;
+
+    public static final int PORT = 9999;
 
     public void start(){
-        CuratorUtils.registerShutdownHook(CuratorUtils.getZkClient(),new InetSocketAddress("127.0.0.1",PORT));
-        new NioEventLoopGroup();
+        try {
+            CuratorUtils.registerShutdownHook(CuratorUtils.getZkClient(),new InetSocketAddress(InetAddress.getLocalHost().getHostAddress(),PORT));
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
         NioEventLoopGroup boss = new NioEventLoopGroup();
         NioEventLoopGroup worker = new NioEventLoopGroup();
         try {
@@ -35,6 +43,8 @@ public class NettyRpcServer {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline pipeline = ch.pipeline();
+                            //if no read event within 30 seconds,the channel will be closed
+                            pipeline.addLast(new IdleStateHandler(30,5,0, TimeUnit.SECONDS));
                             pipeline.addLast(new RpcMessageEncoder());
                             pipeline.addLast(new RpcMessageDecoder());
                             pipeline.addLast(new NettyRpcServerHandler());

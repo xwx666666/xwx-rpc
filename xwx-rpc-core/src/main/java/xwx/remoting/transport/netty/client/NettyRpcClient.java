@@ -1,5 +1,6 @@
 package xwx.remoting.transport.netty.client;
 
+import io.netty.handler.timeout.IdleStateHandler;
 import xwx.dto.RpcMessage;
 import xwx.dto.RpcRequest;
 import xwx.dto.RpcResponse;
@@ -19,6 +20,7 @@ import xwx.remoting.transport.RpcRequestTransport;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author : xwx
@@ -40,6 +42,7 @@ public class NettyRpcClient implements RpcRequestTransport {
                       @Override
                       protected void initChannel(SocketChannel ch) throws Exception {
                           ChannelPipeline pipeline = ch.pipeline();
+                          pipeline.addLast(new IdleStateHandler(0,5,0, TimeUnit.SECONDS));
                           pipeline.addLast(new RpcMessageEncoder());
                           pipeline.addLast(new RpcMessageDecoder());
                           pipeline.addLast(new NettyRpcClientHandler());

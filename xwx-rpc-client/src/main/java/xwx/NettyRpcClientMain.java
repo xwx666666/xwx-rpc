@@ -14,7 +14,6 @@ public class NettyRpcClientMain {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(NettyRpcClientMain.class);
         TestController bean = ctx.getBean(TestController.class);
-//        System.out.println(bean.helloService.hello("12"));
         bean.useHello();
 //        String ret1 = helloService.hello("1");
 //        String ret2 = helloService.hello("i am xwx");
